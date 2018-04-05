@@ -39,7 +39,11 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
     display_board(board)
+<<<<<<< HEAD
     move(board, index, current_player(board))
+=======
+    move(board, index, current_player)
+>>>>>>> 8b43ba63dd6412cf01497524ab0a29965b888be5
   else
     turn(board)
   end
@@ -108,6 +112,7 @@ def winner(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   until over?(board)
     turn(board)
   end
@@ -123,3 +128,11 @@ end
   #counter += 1
   #turn(board)
 #end
+=======
+  counter = 0
+while counter < 9
+  counter += 1
+  turn(board)
+end
+end
+>>>>>>> 8b43ba63dd6412cf01497524ab0a29965b888be5
